@@ -23,6 +23,10 @@ vi /etc/ssh/sshd_config
 ## ssh connecting to the vm in host
 ssh -p 10022 root@localhost 
 
-(Lowercase 'p' means the port number)
+(Lowercase 'p' means the port number for ssh)
 
+## scp transfers files from host to vm
+scp -P 10022 file root@localhost:TOPATH
+
+(Upppercase 'P' also means the port number, but for scp)
 
