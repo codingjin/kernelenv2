@@ -12,6 +12,8 @@ ifconfig -a
 
 (get the ethenet interface, like enps03)
 
+echo "iface enps03 inet dhcp" >> /etc/network/interfaces
+
 ifup enps03
 
 vi /etc/ssh/sshd_config
