@@ -5,7 +5,7 @@ passwd
 
 exit
 
-sudo umount -o loop img mountdir
+sudo umount mountdir
 
 ## set up the network inside vm
 ifconfig -a
