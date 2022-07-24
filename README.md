@@ -16,6 +16,9 @@ echo "iface enps03 inet dhcp" >> /etc/network/interfaces
 
 ifup enps03
 
+(add the command "ifup" to ~/.bashrc )
+
+
 vi /etc/ssh/sshd_config
 
 (#UNCOMMENT "PermitRootLogin" and yes) (# Uncomment "PermitEmptyPasswords" and yes)
