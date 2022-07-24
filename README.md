@@ -25,13 +25,7 @@ vi /etc/ssh/sshd_config
 
 /etc/init.d/S50sshd restart
 
-## ssh connecting to the vm in host
-ssh -p 10022 root@localhost 
+## QEMU-monitor: telnet connecting to the vm 
+(host) telnet 127.0.0.1 5555
 
-(Lowercase 'p' means the port number for ssh)
-
-## scp transfers files from host to vm
-scp -P 10022 file root@localhost:TOPATH
-
-(Upppercase 'P' also means the port number, but for scp)
 
