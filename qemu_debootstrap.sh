@@ -12,11 +12,6 @@ sudo debootstrap --arch=amd64 --include="sudo vim bash-completion net-tools etht
 
 sudo umount mountdir
 
-#sudo mount -t proc /proc mountdir/proc
-#sudo mount -t sysfs /sys mountdir/sys
-#sudo mount -o bind /dev mountdir/dev
-#sudo mount -o bind /dev/pts mountdir/dev/pts
-
 
 #################chroot
 sudo mount -o loop img mountdir
@@ -29,12 +24,7 @@ sudo chroot mountdir
 
 #ping -c2 google.com
 #exit
-#################out
 
-#sudo umount mountdir/proc
-#sudo umount mountdir/sys
-#sudo umount mountdir/dev/pts
-#sudo umount mountdir/dev
-
-
+# Rember umount 
+# sudo umount mountdir
 
